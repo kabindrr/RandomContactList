@@ -29,7 +29,7 @@
       class="wrapper min-vh-100 d-flex justify-content-center align-items-center"
     >
       <div
-        class="phone border border-5 border-black rounded-5 shadow-lg overflow-y"
+        class="phone border border-5 border-black rounded-5 shadow-lg overflow-y-scroll"
         style="height: 600px; width: 300px"
       >
         <!-- top icons -->
@@ -46,24 +46,40 @@
           </div>
         </div>
         <!-- homeScreen -->
-        <div class="homeScreen h-100 p-2 position-relative">
-          <div
-            class="slide-container bg-white p-3 rounded-5 shadow-lg position-relative"
-            style="top: 400px"
-          >
-            <input
-              type="range"
-              min="0"
-              max="100"
-              value="0"
-              class="slider"
-              id="mySlider"
-            />
-            <label id="label" class="position-absolute text-center w-100"
-              >Slide to Unlock</label
+        <main>
+          <div class="homeScreen h-100 p-2 position-relative">
+            <div
+              class="slide-container bg-white p-3 rounded-5 shadow-lg position-relative"
+              style="top: 400px"
             >
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                class="slider"
+                id="mySlider"
+              />
+              <label id="label" class="position-absolute text-center w-100"
+                >Slide to Unlock</label
+              >
+            </div>
           </div>
-        </div>
+        </main>
+        <!-- app screen -->
+        <main
+          class="appScreen p-2 bg-dark pt-5 rounded-5"
+          style="height: 540px; display: none"
+        >
+          <div class="d-flex justify-content-center">
+            <div class="d-flex flex-column align-items-center p-5">
+              <i
+                class="bi bi-person-rolodex text-danger fs-1 bg-white px-2 rounded"
+              ></i>
+              <span class="text-white">Contacts</span>
+            </div>
+          </div>
+        </main>
       </div>
     </div>
 

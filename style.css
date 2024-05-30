@@ -6,6 +6,9 @@
   background: url(./assets/bg2.jpg) no-repeat center;
   background-size: cover;
 }
+.phone::-webkit-scrollbar {
+  display: none;
+}
 
 .slider {
   width: 100%;
