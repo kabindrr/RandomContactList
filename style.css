@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .wrapper {
   background: url(./assets/bg2.jpg) no-repeat center;
   background-size: cover;
@@ -9,7 +14,9 @@
 .phone::-webkit-scrollbar {
   display: none;
 }
-
+.appScreen {
+  cursor: pointer;
+}
 .slider {
   width: 100%;
   -webkit-appearance: none;
@@ -48,4 +55,8 @@
     color: purple;
     filter: drop-shadow(0 0 5px purple);
   }
+}
+
+.header i {
+  right: 10px;
 }
